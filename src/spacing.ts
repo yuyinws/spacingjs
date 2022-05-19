@@ -35,7 +35,7 @@ function keyDownHandler(e: KeyboardEvent) {
     }
   }
 
-  if (e.key === 'Alt' && !active) {
+  if (e.key === '`' && !active) {
     e.preventDefault();
     active = true;
 
@@ -47,7 +47,7 @@ function keyDownHandler(e: KeyboardEvent) {
 }
 
 function keyUpHandler(e: KeyboardEvent) {
-  if (e.key === 'Alt' && active) {
+  if (e.key === '`' && active) {
     active = false;
 
     delayedRef = setTimeout(
